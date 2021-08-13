@@ -1,0 +1,24 @@
+{
+    "manifest_version":2,
+    "name":"Go Corona",
+    "description":"Just a fun app which change coronavirus to 😆 ",
+    "version":"1.0",
+    "content_scripts":[
+        {
+            "matches":["<all_urls>"],
+            "html":["popup.html"],
+            "js":["popup.js"],
+            "css":["style.css"]
+        }
+    ],
+    "icons":{
+        "128":"16.png",
+        "48":"48.png",
+        "16":"16.png"
+    },
+    "browser_action":{
+        "default_icons":"16.png",
+        "default_popup":"popup.html"
+    }
+
+}
